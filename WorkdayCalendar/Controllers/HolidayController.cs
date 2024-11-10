@@ -65,6 +65,7 @@ namespace WorkdayCalendar.API.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [SwaggerOperation("Delete a holiday")]
         [SwaggerResponse(StatusCodes.Status204NoContent, "The NoContent response", typeof(string))]
         [SwaggerResponse(StatusCodes.Status404NotFound, "NotFound response", typeof(string))]
         [SwaggerResponse(StatusCodes.Status500InternalServerError, "The Internal Server Error response", typeof(string))]

@@ -13,13 +13,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkdayCalendar.Infrastruct
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{BF2C26D8-4D08-4FC2-A4E7-01CCBA882168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkdayCalendar.API.Tests", "WorkdayCalendar.API.Tests\WorkdayCalendar.API.Tests.csproj", "{F540C27C-D3CE-4F43-A7B9-85E0009DF048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkdayCalendar.API.Tests", "WorkdayCalendar.API.Tests\WorkdayCalendar.API.Tests.csproj", "{F540C27C-D3CE-4F43-A7B9-85E0009DF048}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkdayCalendar.DomainLayer.Tests", "WorkdayCalendar.DomainLayer.Tests\WorkdayCalendar.DomainLayer.Tests.csproj", "{03CF2C6F-B095-4C19-8B9A-92A2F7BC083D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkdayCalendar.DomainLayer.Tests", "WorkdayCalendar.DomainLayer.Tests\WorkdayCalendar.DomainLayer.Tests.csproj", "{03CF2C6F-B095-4C19-8B9A-92A2F7BC083D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkdayCalendar.InfrastructureLayer.Tests", "WorkdayCalendar.InfrastructureLayer.Tests\WorkdayCalendar.InfrastructureLayer.Tests.csproj", "{58CABB92-0029-49C2-A60B-0CF70AA73239}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkdayCalendar.InfrastructureLayer.Tests", "WorkdayCalendar.InfrastructureLayer.Tests\WorkdayCalendar.InfrastructureLayer.Tests.csproj", "{58CABB92-0029-49C2-A60B-0CF70AA73239}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkdayCalendar.ServiceLayer.Tests", "WorkdayCalendar.ServiceLayer.Tests\WorkdayCalendar.ServiceLayer.Tests.csproj", "{3BB746DB-8811-430C-A14E-533AF945A81D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkdayCalendar.ServiceLayer.Tests", "WorkdayCalendar.ServiceLayer.Tests\WorkdayCalendar.ServiceLayer.Tests.csproj", "{3BB746DB-8811-430C-A14E-533AF945A81D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6441045F-19D4-4558-B0F0-FB615CCF7003}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using WorkdayCalendar.DomainLayer.Exceptions;
 
 namespace WorkdayCalendar.ServiceLayer.Middlewares
