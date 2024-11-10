@@ -62,6 +62,23 @@ The project uses a Domain-Driven Design (DDD) architecture that is divided into 
        Dependencies(Projects):
           - WorkdayCalendar.ServiceLayer
 
+## How to clone the WorkdayCalendar repository
+
+- Copy clone url from the repository code in github
+
+  https://github.com/itnalin/WorkdayCalendar.git
+
+<img width="623" alt="image" src="https://github.com/user-attachments/assets/6d7be1ba-8156-41cc-9605-b490e9f6508c">
+
+- Open Visual Studion and select Clone a repository
+
+![image](https://github.com/user-attachments/assets/6492bbf1-5033-40c4-864f-dcbace73c4be)
+
+-   Paste copied clone url and select Clone
+
+  ![image](https://github.com/user-attachments/assets/208f79f0-e623-4d90-9a93-318f27d834fe)
+
+
 ## Set Workday Start and End
 
 Define the Workday Start and End Times in the WorkdaySettings section of appsettings.Development.json file
@@ -85,6 +102,11 @@ Repository Path: WorkdayCalendar/DatabaseFiles
 "ConnectionStrings": {
   "WorkdayCalendarDatabase": "Data Source=C:\\WorkdayCalendar.db"
 }
+
+## Swagger API
+
+![image](https://github.com/user-attachments/assets/a8f7fb01-0c48-4ff0-9fbb-9c528021fe76)
+
 
 ## Unit Tests
 
