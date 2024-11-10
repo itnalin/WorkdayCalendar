@@ -62,6 +62,30 @@ The project uses a Domain-Driven Design (DDD) architecture that is divided into 
        Dependencies(Projects):
           - WorkdayCalendar.ServiceLayer
 
+## Set Workday Start and End
+
+Define the Workday Start and End Times in the WorkdaySettings section of appsettings.Development.json file
+
+"WorkdaySettings": {
+  "WorkdayStart": "08:00:00",
+  "WorkdayEnd": "16:00:00"
+}
+
+## WorkdayCalendar database setup
+
+Since the application uses a local SQLite database, you first need to download the database files from the GitHub repository to your local PC. After that, specify the local path to the WorkdayCalendar.db file in the ConnectionStrings section of the appsettings.Development.json file.
+
+Repository Path: WorkdayCalendar/DatabaseFiles
+
+- WorkdayCalendar
+- WorkdayCalendar.db-shm
+- WorkdayCalendar.db-wal
+
+
+"ConnectionStrings": {
+  "WorkdayCalendarDatabase": "Data Source=C:\\WorkdayCalendar.db"
+}
+
 ## Unit Tests
 
 <img width="339" alt="image" src="https://github.com/user-attachments/assets/475970dd-1280-4ba4-abce-7a2e4282f6a8">
