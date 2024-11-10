@@ -105,7 +105,8 @@ Repository Path: WorkdayCalendar/DatabaseFiles
 
 ## Swagger API
 
-![image](https://github.com/user-attachments/assets/a8f7fb01-0c48-4ff0-9fbb-9c528021fe76)
+![image](https://github.com/user-attachments/assets/a2016c90-8079-4d95-b815-38d8779d7d79)
+
 
 
 ## Unit Tests
