@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using WorkdayCalendar.DomainLayer.Entities;
+using WorkdayCalendar.InfrastructureLayer;
 using WorkdayCalendar.ServiceLayer.Middlewares;
 using WorkdayCalendar.ServiceLayer.Startup;
 
@@ -14,6 +16,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.EnableAnnotations();
 });
+
+builder.Services.AddDbContext<WorkdayCalendarContext>(options =>
+        options.UseSqlite(builder.Configuration.GetConnectionString("WorkdayCalendarDatabase")));
 
 Services.RegisterServices(builder.Services);
 builder.Services.Configure<WorkdaySetting>(builder.Configuration.GetSection("WorkdaySettings"));

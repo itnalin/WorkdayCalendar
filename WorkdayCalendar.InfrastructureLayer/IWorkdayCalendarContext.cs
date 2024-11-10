@@ -10,8 +10,7 @@ namespace WorkdayCalendar.InfrastructureLayer
 
     public interface IWorkdayCalendarContext
     {
-        DbSet<Holiday> Holidays { get; set; }
-        string DbPath { get; }
+        DbSet<Holiday> Holidays { get; set; }       
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
         void UpdateEntity<TEntity>(TEntity entity) where TEntity : class;

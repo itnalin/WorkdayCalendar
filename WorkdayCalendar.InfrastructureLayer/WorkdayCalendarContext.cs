@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using WorkdayCalendar.DomainLayer.Entities;
 
 namespace WorkdayCalendar.InfrastructureLayer
@@ -6,14 +7,12 @@ namespace WorkdayCalendar.InfrastructureLayer
     public class WorkdayCalendarContext : DbContext, IWorkdayCalendarContext
     {
         public DbSet<Holiday> Holidays { get; set; }        
+        
+        private readonly string _connectionString;
 
-        public string DbPath { get; }
-
-        public WorkdayCalendarContext()
+        public WorkdayCalendarContext(IConfiguration configuration)
         {
-            var folder = Environment.SpecialFolder.LocalApplicationData;
-            var path = Environment.GetFolderPath(folder);
-            DbPath = System.IO.Path.Join(path, "WorkdayCalendar.db");
+            _connectionString = configuration.GetConnectionString("WorkdayCalendarDatabase")!;            
         }
 
         public void UpdateEntity<TEntity>(TEntity entity) where TEntity : class
@@ -26,7 +25,7 @@ namespace WorkdayCalendar.InfrastructureLayer
             return base.SaveChangesAsync(cancellationToken);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlite($"Data Source={DbPath}");
+        => options.UseSqlite(_connectionString);
 
         public void RemoveEntity<TEntity>(TEntity entity) where TEntity : class
         {
