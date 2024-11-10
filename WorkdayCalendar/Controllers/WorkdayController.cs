@@ -7,6 +7,7 @@ namespace WorkdayCalendar.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [SwaggerTag("This handles the workday calculation")]
     public class WorkdayController : ControllerBase
     {
         private readonly IWorkdayService _workdayService;
